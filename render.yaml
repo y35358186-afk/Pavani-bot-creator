@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pavani-bot
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    autoDeploy: true
